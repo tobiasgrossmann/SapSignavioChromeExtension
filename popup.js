@@ -9,7 +9,7 @@ function checkDataAvailability() {
 
     if (data.csvData) {
       const recordCount = data.csvData.split('\n').length - 1; // Count records by line
-      status.textContent = `Data available with ${recordCount} records. Ready to download.`;
+      status.textContent = `Data available. Ready to download.`;
       downloadButton.disabled = false;
     } else {
       status.textContent = "No data found. Please open the SAP Signavio recommendations.";

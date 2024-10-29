@@ -55,7 +55,7 @@ function jsonToCSV(jsonArray) {
   //let keys = Object.keys(jsonArray[0]);
   let csvRows = [keys.join(',')];
 
-  jsonArray.forEach((obj) => {
+  jsonArray.filter(obj => obj.objectCount !== 0).forEach((obj) => {
     let values = keys.map((key) => {
       let val = obj[key];
       if (val === null || typeof val === 'object') {
