@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Wavestone SAP Signavio Data Extractor",
+    "version": "1.0",
+    "description": "Extract and download SAP Signavio recommendations as CSV by monitoring specific JSON API calls.",
+    "permissions": ["activeTab", "webRequest", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png"
+      }
+    }
+  }
+  

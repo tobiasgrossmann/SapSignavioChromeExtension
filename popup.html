@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON to CSV Converter</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Signavio Recommendations to CSV</h2>
+    <p>Open the SAP Signavio recommendations to capture the data. Once the data is loaded, you can download it as a CSV file.</p>
+    <div id="status" class="status-message">Checking for available data...</div>
+    <button id="fetch-json" disabled>Download CSV</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
